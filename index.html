@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cora Café</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <div class="container header__container">
+
+            <a href="#" class="logo">
+                <img src="assets/img/logo-cora.jpg" alt="Cora Café">
+            </a>
+
+            <nav class="nav">
+                <ul class="nav__list">
+
+                    <li>
+                        <a href="#inicio">Inicio</a>
+                    </li>
+
+                    <li>
+                        <a href="#menu">Menú</a>
+                    </li>
+
+                    <li>
+                        <a href="#nosotros">Nosotros</a>
+                    </li>
+
+                    <li>
+                        <a href="#galeria">Galería</a>
+                    </li>
+
+                    <li>
+                        <a href="#reservas">Reservas</a>
+                    </li>
+
+                    <li>
+                        <a href="#contacto">Contacto</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <a href="#reservas" class="header__button">
+                Reservar
+            </a>
+
+
+        </div>
+
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+
+        <div class="container hero__container">
+
+            <div class="hero__content">
+
+                <p class="hero__eyebrow">
+                    CAFETERÍA DE ESPECIALIDAD
+                </p>
+
+                <h1>
+                    Café, calma<br>
+                    y algo rico.
+                </h1>
+
+                <p class="hero__text">
+                    Un pequeño lugar para disfrutar de las cosas simples.
+                    Café recién preparado, pastelería artesanal y momentos
+                    para quedarse un rato más.
+                </p>
+
+                <a href="#menu" class="hero__button">
+                    Ver menú
+                </a>
+
+            </div>
+
+
+            <div class="hero__image">
+
+                <img 
+                 src="assets/img/hero-cafe.jpg"
+                 alt="Taza de café y croissant en Cora Café"
+>
+            </div>
+
+        </div>
+
+    </section>
+
+  <!-- FAVORITOS -->
+<section class="favorites" id="menu">
+
+    <div class="container">
+
+        <div class="section__heading">
+
+            <p class="section__eyebrow">
+                PARA DISFRUTAR
+            </p>
+
+            <h2>
+                Nuestros favoritos
+            </h2>
+
+            <p>
+                Pequeños placeres hechos para acompañar
+                tus momentos en Cora.
+            </p>
+
+        </div>
+
+
+        <div class="favorites__grid">
+
+            <!-- CAPPUCCINO -->
+           
+<!-- CAPPUCCINO -->
+<article class="product-card">
+
+    <div class="product-card__image">
+        <img
+            src="assets/img/cappuccino.jpg"
+            alt="Cappuccino de Cora Café"
+        >
+    </div>
+
+    <div class="product-card__content">
+
+        <h3>
+            Cappuccino
+        </h3>
+
+        <p>
+            Espresso, leche vaporizada y una espuma
+            suave y cremosa.
+        </p>
+
+        <span class="product-card__price">
+            $4.500
+        </span>
+
+        <button
+            type="button"
+            class="product-card__button"
+            data-product="Cappuccino"
+            data-price="4500"
+        >
+            Agregar al pedido
+        </button>
+
+    </div>
+
+</article>
+
+
+
+            <!-- CROISSANT -->
+            <article class="product-card">
+
+                <div class="product-card__image">
+
+                    <img
+                        src="assets/img/croissant.jpg"
+                        alt="Croissant artesanal"
+                    >
+
+                </div>
+
+                <div class="product-card__content">
+
+                    <h3>
+                        Croissant
+                    </h3>
+
+                    <p>
+                        Hojaldre artesanal, dorado y crujiente,
+                        recién horneado.
+                    </p>
+
+                    <span class="product-card__price">
+                        $3.200
+                    </span>
+
+                    
+<button
+    type="button"
+    class="product-card__button"
+    data-product="Croissant"
+    data-price="3200"
+>
+    Agregar al pedido
+</button>
+
+
+                </div>
+
+            </article>
+
+
+            <!-- CHEESECAKE -->
+            <article class="product-card">
+
+                <div class="product-card__image">
+
+                    <img
+                        src="assets/img/cheesecake.jpg"
+                        alt="Cheesecake de frutos rojos"
+                    >
+
+                </div>
+
+                <div class="product-card__content">
+
+                    <h3>
+                        Cheesecake
+                    </h3>
+
+                    <p>
+                        Cheesecake cremoso acompañado de frutos
+                        rojos de estación.
+                    </p>
+
+                    <span class="product-card__price">
+                        $5.200
+                    </span>
+
+                    
+<button
+    type="button"
+    class="product-card__button"
+    data-product="Cheesecake"
+    data-price="5200"
+>
+    Agregar al pedido
+</button>
+
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PEDIDO -->
+<section class="order" id="pedido">
+    <div class="container">
+
+        <div class="section__heading">
+            <p class="section__eyebrow">TU MOMENTO CORA</p>
+            <h2>Tu pedido</h2>
+            <p>Elegí tus favoritos y armá algo rico.</p>
+        </div>
+
+        <div class="order__content">
+
+            <ul class="order__list"></ul>
+
+            <p class="order__empty">
+                Todavía no agregaste productos.
+            </p>
+
+            <p class="order__total">
+                Total: $<span id="order-total">0</span>
+            </p>
+
+            <button type="button" class="order__clear">
+                Vaciar pedido
+            </button>
+            
+<button type="button" class="order__checkout">
+    Finalizar pedido
+</button>
+
+<div class="order__summary" aria-live="polite" hidden></div>
+
+<a
+    class="order__whatsapp"
+    href="#"
+    target="_blank"
+    rel="noopener noreferrer"
+    hidden
+>
+    Enviar pedido por WhatsApp
+</a>
+
+<button type="button" class="order__back" hidden>
+    Volver al menú
+</button>
+
+
+        </div>
+    </div>
+</section>
+
+
+<section class="about" id="nosotros">
+  <div class="container about__container">
+
+    <div class="about__image">
+      <img src="assets/img/cafe_frio.png" alt="Interior de Cora Café">
+    </div>
+
+    <div class="about__content">
+      <p class="section__eyebrow">SOBRE CORA</p>
+
+      <h2>Un lugar para quedarse.</h2>
+
+      <p>
+        Cora nació como un pequeño espacio para disfrutar de las cosas
+        simples: un buen café, algo rico y un momento de calma.
+      </p>
+
+      <p>
+        Creemos que no hace falta mucho para sentirse bien. Solo un lugar
+        cálido, productos hechos con dedicación y tiempo para disfrutar.
+      </p>
+
+      <a href="#contacto" class="about__button">Conocé Cora</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="gallery" id="galeria">
+  <div class="container">
+
+    <div class="section__heading">
+      <p class="section__eyebrow">UN VISTAZO A CORA</p>
+      <h2>Un espacio para disfrutar.</h2>
+      <p>
+        Café, detalles y momentos que hacen de Cora un lugar especial.
+      </p>
+    </div>
+
+    <div class="gallery__grid">
+      <div class="gallery__item gallery__item--large">
+        <img src="assets/img/interior_png.png" alt="Interior de Cora">
+      </div>
+
+      <div class="gallery__item">
+        <img src="assets/img/Interior2_png.png" alt="Cora Cafe">
+      </div>
+
+      <div class="gallery__item">
+        <img src="assets/img/merienda_cora.png" alt="Merienda">
+      </div>
+
+      
+      <div class="gallery__item">
+        <img src="assets/img/merienda_salada.png" alt="Merienda Salada">
+      </div>
+
+  </div>
+</section>
+
+<!-- RESERVAS -->
+<section class="reservations" id="reservas">
+
+    <div class="container reservations__container">
+
+        <div class="reservations__content">
+
+            <p class="section__eyebrow">
+                RESERVÁ TU MOMENTO
+            </p>
+
+            <h2>
+                Una mesa te espera.
+            </h2>
+
+            <p>
+                Elegí el día, el horario y la cantidad de personas.
+                Nosotros nos encargamos del resto.
+            </p>
+
+        </div>
+
+
+        <form class="reservation-form">
+
+            <div class="form__group">
+                <label for="date">Fecha</label>
+                <input type="date" id="date" name="date">
+            </div>
+
+            <div class="form__group">
+                <label for="time">Horario</label>
+                <select id="time" name="time">
+                    <option value="">Seleccionar</option>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00</option>
+                    <option value="18:00">18:00</option>
+                    <option value="19:00">19:00</option>
+                    <option value="20:00">20:00</option>
+                </select>
+            </div>
+
+            <div class="form__group">
+                <label for="guests">Personas</label>
+                <select id="guests" name="guests">
+                    <option value="">Seleccionar</option>
+                    <option value="1">1 persona</option>
+                    <option value="2">2 personas</option>
+                    <option value="3">3 personas</option>
+                    <option value="4">4 personas</option>
+                    <option value="5">5 personas</option>
+                    <option value="6">6 personas</option>
+                </select>
+            </div>
+
+            <button type="submit" class="reservation-form__button">
+                Reservar mesa
+            </button>
+            
+<p class="reservation-message" aria-live="polite"></p>
+
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- CONTACTO -->
+<section class="contact" id="contacto">
+
+    <div class="container contact__container">
+
+        <div class="contact__content">
+
+            <p class="section__eyebrow">
+                ENCONTRÁ CORA
+            </p>
+
+            <h2>
+                Vení a visitarnos.
+            </h2>
+
+            <p>
+                Un café, algo rico y un lugar donde bajar un cambio.
+                Te esperamos.
+            </p>
+
+        </div>
+
+
+        <div class="contact__info">
+
+            <div class="contact__item">
+                <span>Dirección</span>
+                <p>Av. Principal 123 · Córdoba</p>
+            </div>
+
+            <div class="contact__item">
+                <span>Horarios</span>
+                <p>
+                    Lunes a viernes · 08:00 — 20:00<br>
+                    Sábados y domingos · 09:00 — 21:00
+                </p>
+            </div>
+
+            <div class="contact__item">
+                <span>Contacto</span>
+                <p>
+                    hola@coracafe.com<br>
+                    +54 9 351 123 4567
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+    <div class="container footer__container">
+
+        <div class="footer__brand">
+            <h3>Cora Café</h3>
+            <p>
+                Café, calma y algo rico.
+            </p>
+        </div>
+
+        <div class="footer__links">
+            <a href="#inicio">Inicio</a>
+            <a href="#menu">Menú</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#galeria">Galería</a>
+            <a href="#reservas">Reservas</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+
+        <div class="footer__social">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+        </div>
+
+    </div>
+
+    <div class="footer__bottom">
+        <p>© 2026 Cora Café. Todos los derechos reservados.</p>
+    </div>
+
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
